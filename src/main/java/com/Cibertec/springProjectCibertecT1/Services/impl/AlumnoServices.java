@@ -51,9 +51,9 @@ public class AlumnoServices implements IAlumnoServices {
             AlumnoToUpdate.setTelefono(_alumno.getTelefono());
             AlumnoToUpdate.setCorreo(_alumno.getCorreo());
             _alumnoRepository.save(AlumnoToUpdate);
-            return 1; // Successfully updated
+            return 1;
         } else {
-            return 0; // Animal not found
+            return 0;
         }
     }
 
